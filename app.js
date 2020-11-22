@@ -34,3 +34,9 @@ module.exports = mcServer.createMCServer(settings)
 process.on('unhandledRejection', err => {
   console.log(err.stack)
 })
+
+process.on('SIGINT', () => { // CTRL-C
+  console.log('SIGINT signal received.')
+  process.exit(1)
+  // TODO: should properly save state, in production it would also "Server stopping in 10 seconds ..."
+})

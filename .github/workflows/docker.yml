@@ -36,6 +36,6 @@ jobs:
           push: true
           tags: |
             prismarinejs/flying-squid:latest
-            prismarinejs/flying-squid:1.0.0
+            prismarinejs/flying-squid:1.0.1
             ghcr.io/prismarinejs/flying-squid:latest
-            ghcr.io/prismarinejs/flying-squid:1.0.0
+            ghcr.io/prismarinejs/flying-squid:1.0.1

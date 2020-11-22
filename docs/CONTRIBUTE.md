@@ -67,20 +67,7 @@ For your convenience, you can put your plugin inside /src/plugins. An example mi
 
 ## Docker
 
-You can build Docker image locally like that (positionned in root directory):
-```bash
-docker build -t prismarinejs/flying-squid . -f deploy/Dockerfile
-```
-
-```bash
-docker run -p 25565:25565 -v $(pwd)/config:/config --name my-flying-squid --rm prismarinejs/flying-squid
-```
-
-[docker-compose](https://docs.docker.com/compose/) is useful to quickly launch & stop a single container with a specific configuration, for a more production purpose, it is more frequent to deploy your container(s) in [Kubernetes](https://kubernetes.io) with [Helm](https://helm.sh).
-
-```bash
-docker-compose -f deploy/docker-compose.yaml up
-```
+[See](../deploy/README.md)
 
 ## Conclusion
 

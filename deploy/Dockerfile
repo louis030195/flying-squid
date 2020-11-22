@@ -5,4 +5,5 @@ COPY package.json package-lock.json ./
 RUN npm run prepare
 COPY . .
 
-ENTRYPOINT [ "node", "app.js", "-c", "/config" ]
+ENTRYPOINT [ "node", "app.js" ]
+CMD [ "-c", "/config" ]
